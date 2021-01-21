@@ -1,4 +1,4 @@
-//Github repository link:  
+//Repository link:  https://github.com/Mr-OmarFaruk/JavascriptAssignment  
 
 //Q:1) kilometer to meter convert
 
