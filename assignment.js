@@ -79,16 +79,15 @@ console.log(totalCost);
 
 //Q:4) Find biggest name of a friend in array
 
-function megaFriend(friendArray) {
-    var longestName = "";
-       
-    friendArray.forEach(function(word) {
-      if(word.length > longestName.length) {
-        longestName = word;
-      }
-    });
+function megaFriend(friendsName) {
+    var longestName = '';
+    for (var i = 0; i < friendsName.length; i++) {
+        if (longestName.length < friendsName[i].length) {
+            longestName = friendsName[i];
+        }
+    }
     return longestName;
 }
-  
-var bigName = megaFriend(["Mahabub","Abdul Karim","Omar","Tanimul islam"]);
-console.log(bigName);
+
+var getMegaFriend = megaFriend(["Mahabub","Abdul Karim","Omar","Tanimul islam"]);
+console.log(getMegaFriend);
